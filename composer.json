@@ -1,0 +1,43 @@
+{
+    "name": "snippet/laravel-tolgee",
+    "description": "Laravel integration for Tolgee translation management",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Snippet\\LaravelTolgee\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Snippet\\LaravelTolgee\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Snippet\\LaravelTolgee\\Providers\\TolgeeServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
